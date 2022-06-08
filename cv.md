@@ -39,6 +39,6 @@ Good day, my name is Egor and im 22 yrs old. Im from Yeakerinburg, Russia. My hi
 ```javascript
 	console.log("Hello world!");
 ```
-## My Projects:  
+## My Projects:
 
 + [VK Videogames, photo and design blog](https://vk.com/namelss "VK Videogames, photo and design blog")
