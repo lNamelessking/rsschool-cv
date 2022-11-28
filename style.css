@@ -1,1 +1,351 @@
+/* Adding Fonts */
 
+
+@font-face {
+    font-family:'KonstantGrotesk';
+    src: url(assets/fonts/KonstantGrotesk-Book.otf);
+}
+
+
+
+
+
+/* Глобальные настройки, фон, шрифт, контенйнер
+Бокс сайзинг бордер бокс для удобства работы с блоками
+так как высчитывать пэддинги не особо удобно
+пэддинги если размер монитора будет меньше 1500 пикселей, марджин чтобы выравнивался 
+по середине, настройки бади бэкграунда */ 
+
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    box-sizing: border-box;
+  } 
+
+.container {
+    max-width: 1500px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: sans-serif;
+    background-size: 60%;
+    background-image: url(assets/img/background.png);
+    background-repeat: no-repeat;
+    background-position: top 60% right 10%;
+    background-attachment: fixed;
+    background-color: #E5E5E5;
+    margin: 0px;
+    font-size: 17px;
+}
+
+
+
+
+
+/* Глобальные настройки для Header
+Отступ от шапки, настройки для нав листа, центрируем, ограничиваем, 
+центрируем убираем стиль ссылок, выбираем размер шрифта, выбираем 
+цвет фона навигации */
+
+header {
+    margin-bottom: 150px;
+}
+
+.nav-list {
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+
+.nav-list a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 217, 255);
+  }
+
+.header-nav {
+    background-color: rgba(0, 0, 0, 0.61);
+    padding:18px 40px 18px 40px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* Header content 
+Выравниваем текстовый контент шапки и фото в 1 строку, 
+расставляем по краям, делаем гэп между ними 50 пикселей
+центрируем */
+.header-row {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Заголовок row */
+.header-head
+{
+    font-family: 'KonstantGrotesk';
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+/* Размер текст контента in row */
+.header-content {
+    max-width: 800px;
+}
+
+/* настройки параграфа для текст контента */
+.header-content p { 
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* Редактируем фото, размер, выравниваем по центру */
+.header-img {
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: center;
+}
+
+.image {
+    width: 60%;
+    height: auto;
+    margin-right: 0px;
+    vertical-align: middle;
+}
+
+
+
+
+/* Main content глобальные штуки 
+Главная страница разделена на 2 столба, один меньше 
+под различные описание, второй под более глобальное описание
+моего опыта*/
+
+.content-row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 200px;
+    justify-content: space-between;
+}
+
+.row {
+    flex: 1 1 0;
+}
+
+.left { 
+    max-width: fit-content;
+}
+
+/* Тут редактируем сами секции */
+
+.section-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section-list li {
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 35px;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.main-section {
+    margin-bottom: 60px;
+}
+
+
+
+/* Редактируем секцию со скиллами 
+Каждый скилл имеет оценку, оценка выражается в точках
+черные заполняют серые, они отрисованы с помощью CSS. */
+/* Создаем точечки */
+
+.dot {
+    height: 10px;
+    width:  10px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.dot2 {
+    height: 10px;
+    width:  10px;
+    border-radius: 50%;
+    background: linear-gradient(270deg, rgb(141, 141, 141) 50%, rgb(0, 0, 0) 50%);
+}
+
+.dot3 {
+    height: 10px;
+    width:  10px;
+    border-radius: 50%;
+    background-color: #8D8D8D;
+}
+
+/* Редактируем лейаут секции со скилами */
+.skills-list {
+    display: grid;
+    grid-template-columns: 130px 85px; 
+    gap: 30px; 
+    align-items: center;
+    margin-bottom: 5px; 
+}
+
+/* Локально сбросим стиль для параграфа в текстовом контенте скиллов*/
+.skills-list p {
+   margin: 0;
+   padding: 0;
+}
+
+/* Размещаем шарики внутри блока равномерно */
+.circle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* Редактируем секцию с кодом, засунул его в пре, обернул код
+в блок, сделал рамку, цвет фона, и тд.*/
+code {
+  background-color: rgb(213, 213, 228);
+  border: 1px solid #999;
+  display: block;
+  padding-left: 20px;
+  width: 300px;
+  padding-left: 20px;
+}
+
+pre {
+    margin: 0
+}
+
+
+
+
+/* Редактируем секцию образования 
+Листы, отступы, шрифты, и тд, не знаю 
+правильно ли я выделил место учебы, стоило бы 
+стронг использовать или что, не знаю....*/
+.education p {
+    margin: 0 0 5px 0;
+    line-height: 1;
+}
+
+.education li {
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Секция активитиз, картинки расположенные
+в один ряд с отступами */
+.activities {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    gap: 15px;
+    max-width: fit-content;
+
+}
+
+.activities li img {
+    width: 30px;
+    height: auto;
+}
+
+
+
+
+/* Редактируем пока что пустую секцию экспирианс (уменя нет опыта) =( */
+
+.project-card {
+    border-bottom-color:#000;
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+.project-title  {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.project-skills {
+    padding: 0 30px;
+    margin-top: 20px;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: rgb(33, 86, 199);
+}
+
+
+/* Оформляем футер */
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-row img {
+    width: 120px;
+    height: auto;
+    opacity: 0.4;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer p {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.144);
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 15px 200px;
+}
