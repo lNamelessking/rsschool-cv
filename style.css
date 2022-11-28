@@ -312,6 +312,11 @@ pre {
     margin-top: 20px;
 }
 
+.project-card a {
+    text-decoration: none;
+    color: rgb(33, 86, 199);
+}
+
 
 /* Оформляем футер */
 
