@@ -10,20 +10,20 @@ Good day, my name is Egor and im 22 yrs old. Im from Yeakerinburg, Russia. My hi
 ## Contacts:
 
 + Russia, Yekaterinburg 
-+ [Vk Link](https://vk.com/nmlsskingg "Vk Link")
++ 
 + Discord: avarage silent hill fan#9370
++ Github: lnamelessking
 
 ## My skills: 
 
-+ Good at cooking
-+ Good in making memes
-+ Good at swimming 
-+ Not yet good in front end
-+ Photoshop, Illustrator, After Effects
++ Photoshop
++ Figma
++ HTML CSS JS
++ GIT
 
 ## Education
 
-1. Local University. Graphic Design. Ending in 2023
+1. Fundamentals of marketing, art and service
 2. RS School. JS/FE Pre-School 2022 (In progress)
 
 ## Languages 
@@ -42,3 +42,7 @@ Good day, my name is Egor and im 22 yrs old. Im from Yeakerinburg, Russia. My hi
 ## My Projects:
 
 + [VK Videogames, photo and design blog](https://vk.com/namelss "VK Videogames, photo and design blog")
+
+## My activities: 
+
+Gaming, traveling, painting, music, photo.
