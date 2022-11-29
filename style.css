@@ -18,6 +18,7 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
   }
 
 * {
@@ -40,6 +41,9 @@ body {
     background-color: #E5E5E5;
     margin: 0px;
     font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 
@@ -53,6 +57,7 @@ body {
 
 header {
     margin-bottom: 150px;
+    flex: 0 0 auto;
 }
 
 .nav-list {
@@ -144,6 +149,10 @@ a:hover {
 Главная страница разделена на 2 столба, один меньше 
 под различные описание, второй под более глобальное описание
 моего опыта*/
+
+main {
+    flex: 1 0 auto;
+}
 
 .content-row {
     display: flex;
@@ -324,6 +333,10 @@ pre {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.144);
+    padding: 15px 200px;
 }
 
 .footer-row img {
@@ -343,9 +356,11 @@ footer p {
     margin: 0;
 }
 
+footer a:hover {
+    color: rgb(255, 255, 255);
+  }
+
 footer {
-    background-color: rgba(0, 0, 0, 0.144);
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 15px 200px;
+    margin-top: 50px;
+    flex: 0 0 auto;
 }
