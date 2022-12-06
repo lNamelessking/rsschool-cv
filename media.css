@@ -83,4 +83,12 @@
         .footer-row {
             padding: 10px;
         }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: 85px 80px;
+            gap: 80px;
+            align-items: center;
+            margin-bottom: 5px;
+        }
 }
