@@ -22,7 +22,8 @@
 
         /* Шапка в ряд */
         .header-row {
-            margin-top: 40px;
+            margin-top: 0px;
+            padding-top: 40px;
             flex-direction: column-reverse;
             align-content: center;
         }
@@ -81,7 +82,7 @@
             max-width: 100%;
         }
         .footer-row {
-            padding: 10px;
+            padding: 20px 20px;
         }
 
         .skills-list {
